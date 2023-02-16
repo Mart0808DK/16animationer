@@ -1,0 +1,435 @@
+/* Animation 1: Falling
+   Bolden falder konstant fra oven. */
+.falling {
+  animation-name: falling;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes falling {
+  0% {
+    transform: translate(0, -300%);
+  }
+
+  100% {
+    transform: translate(0, 300%);
+  }
+}
+
+.bouncing {
+  animation-name: bouncing;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+/* Animation 2: bouncing*/
+
+@keyframes bouncing {
+  0% {
+    transform: translate(0, -150%);
+  }
+  50% {
+    transform: translate(0, 150%);
+  }
+
+  100% {
+    transform: translate(0, -150%);
+  }
+}
+
+/* Animation 3: drop*/
+
+.drop {
+  animation-name: drop;
+  animation-duration: 10s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+}
+
+@keyframes drop {
+  0% {
+    transform: translate(0, -300%);
+  }
+  50% {
+    transform: translate(0, 150%);
+  }
+  100% {
+    transform: translate(0, 150%);
+  }
+}
+
+/* Animation 4: pattern*/
+
+.pattern {
+  animation-name: pattern;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes pattern {
+  0% {
+    transform: translate(150%, 0);
+  }
+  25% {
+    transform: translate(0, 150%);
+  }
+
+  50% {
+    transform: translate(-150%, 0);
+  }
+  75% {
+    transform: translate(0, -150%);
+  }
+
+  100% {
+    transform: translate(150%, 0);
+  }
+}
+
+/* Animation 5 Zoom out */
+.zoom_out {
+  animation-name: zoom;
+  animation-duration: 50s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(9);
+  }
+  1% {
+    transform: scale(7);
+  }
+  2% {
+    transform: scale(5);
+  }
+  3% {
+    transform: scale(3);
+  }
+  4% {
+    transform: scale(1);
+  }
+}
+
+/* Animation 6 Zoom in */
+.zoom_in {
+  animation-name: zoomIn;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(2);
+  }
+  25% {
+    transform: scale(4);
+  }
+  50% {
+    transform: scale(6);
+  }
+  75% {
+    transform: scale(8);
+  }
+  100% {
+    transform: scale(10);
+  }
+}
+
+/* Animation 7 fade out */
+.fade_out {
+  animation-name: fadeOut;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+/* Animation 8 */
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.fade_in {
+  animation-name: fadeIn;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  1% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* Animation 8 */
+.rotation {
+  animation-name: rotate;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+/* Animation 9 rotate */
+@keyframes rotate {
+  0% {
+    rotate: 0deg;
+  }
+  25% {
+    rotate: 90deg;
+  }
+  50% {
+    rotate: 180deg;
+  }
+  75% {
+    rotate: 270deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}
+
+/* Animation 10 rotate 2 */
+.rotation2 {
+  animation-name: rotate2;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  transform-origin: top left;
+}
+
+@keyframes rotate2 {
+  0% {
+    rotate: 0deg;
+    transform: translate(150%, 0);
+  }
+  25% {
+    rotate: 90deg;
+    transform: translate(0, 150%);
+  }
+  50% {
+    rotate: 180deg;
+    transform: translate(-150%, 0);
+  }
+  75% {
+    rotate: 270deg;
+    transform: translate(0, -150);
+  }
+  100% {
+    rotate: 360deg;
+    transform: translate(150%, 0);
+  }
+}
+
+/* Animation 11 glow */
+.glow {
+  animation-name: glow;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes glow {
+  0% {
+    filter: drop-shadow(0px 0px 0px rgb(240, 255, 25));
+  }
+  50% {
+    filter: drop-shadow(0px 0px 20px rgb(240, 255, 25));
+  }
+  100% {
+    filter: drop-shadow(0px 0px 0px rgb(240, 255, 25));
+  }
+}
+
+/* Animation 12 blur to grey */
+.blur_to_gray {
+  animation-name: blur_to_gray;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes blur_to_gray {
+  0% {
+    transform: translate(-150%, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(0, 0) rotate(90deg);
+    filter: grayscale(0.5) blur(2.5px);
+  }
+  50% {
+    transform: translate(150%, 0) rotate(180deg);
+    filter: grayscale(1) blur(5px);
+  }
+  75% {
+    transform: translate(0, 0) rotate(90deg);
+    filter: grayscale(0.5) blur(2.5px);
+  }
+  100% {
+    transform: translate(-150%, 0) rotate(0deg);
+    filter: grayscale(0);
+  }
+}
+
+/* Animation 13 pulse */
+.pulse {
+  animation-name: pulse;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Animation 14 overshoot */
+.overshoot {
+  animation-name: overshoot;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0.57, 0.9, 0.96, 1.69);
+  animation-iteration-count: 1;
+  transform: translate(150%, 0);
+}
+
+@keyframes overshoot {
+  0% {
+    transform: translate(-150%, 0) rotate(0deg);
+  }
+  100% {
+    transform: translate(150%, 0) rotate(360deg);
+  }
+}
+
+/* Animation 15 bounce */
+.bounce {
+  animation-name: bounce;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: 1;
+  transform: translate(150%, 150%);
+}
+
+@keyframes bounce {
+  0% {
+    transform: translate(-150%, -100%) rotate(0deg);
+  }
+  10% {
+    transform: translate(-120%, 150%) rotate(36deg);
+  }
+  20% {
+    transform: translate(-90%, 25%) rotate(72deg);
+  }
+  30% {
+    transform: translate(-60%, 150%) rotate(108deg);
+  }
+  40% {
+    transform: translate(-30%, 87.5%) rotate(144deg);
+  }
+  50% {
+    transform: translate(0, 150%) rotate(180deg);
+  }
+  60% {
+    transform: translate(30%, 118.75%) rotate(216deg);
+  }
+  70% {
+    transform: translate(60%, 150%) rotate(252deg);
+  }
+  80% {
+    transform: translate(90%, 134.375%) rotate(288deg);
+  }
+  90% {
+    transform: translate(120%, 150%) rotate(324deg);
+  }
+  95% {
+    transform: translate(135%, 142.1875%) rotate(342deg);
+  }
+  100% {
+    transform: translate(150%, 150%) rotate(360deg);
+  }
+}
+
+/* Animation 16 sqaush */
+.squash {
+  animation-name: squash;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  transform: translate(8%, -150%);
+}
+
+@keyframes squash {
+  0% {
+    transform: translate(8%, -150%);
+  }
+
+  23% {
+    transform: translate(140%, 0%);
+  }
+
+  25% {
+    transform: translate(185%, 0%) scaleX(0.75);
+  }
+
+  27% {
+    transform: translate(150%, 8%);
+  }
+
+  48% {
+    transform: translate(0, 140%);
+  }
+
+  50% {
+    transform: translate(0, 185%) scaleY(0.75);
+  }
+
+  52% {
+    transform: translate(-8%, 150%);
+  }
+
+  73% {
+    transform: translate(-140%, 0);
+  }
+
+  75% {
+    transform: translate(-185%, 0) scaleX(0.75);
+  }
+
+  77% {
+    transform: translate(-150%, -8%);
+  }
+  96% {
+    transform: translate(0, -140%);
+  }
+  98% {
+    transform: translate(0, -185%) scaleY(0.75);
+  }
+  100% {
+    transform: translate(8%, -150%);
+  }
+}
